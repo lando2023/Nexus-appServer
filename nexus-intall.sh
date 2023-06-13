@@ -35,7 +35,7 @@ sudo -xvf  nexus.tar.gz
 sudo rm -rf sonarqube-7.8.zip
 sudo mv /opt/nexus-3* /opt/nexus
 
-# 6. Grant file permission for sonar user to start and manage SonarQube 
+# 6. Change the owner and group permissions to /opt/nexus and /opt/sonartype-work directories 
 sudo chown -R nexus:nexus /opt/nexus
 sudo chown -R nexus:nexus /opt/sonartype-work
 sudo chmod -R 775 /opt/nexus
