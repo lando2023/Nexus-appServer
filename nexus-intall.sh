@@ -31,9 +31,9 @@ sudo yum install java-11-openjdk-devel java-1.8.0-openjdk-devel -y
 
 # 5. Downlaod the nexus software and extract it (unzip)
 sudo wget https://download.sonatype.com/nexus/3/nexus-3.55.0-01-unix.tar.gz
-sudo -xvf  nexus.tar.gz
-sudo rm -rf sonarqube-7.8.zip
-sudo mv /opt/nexus-3* /opt/nexus
+sudo -zxvf  nexus-3.55.0-01-unix.tar.gz
+sudo mv /opt/ nexus-3.55.0-01-unix.tar.gz /opt/nexus
+sudo rm -rf nexus-3.55.0-01-unix.tar.gz
 
 # 6. Change the owner and group permissions to /opt/nexus and /opt/sonartype-work directories 
 sudo chown -R nexus:nexus /opt/nexus
